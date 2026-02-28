@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		347394AB2F527B9400377DBA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347394AA2F527B9400377DBA /* LoginViewController.swift */; };
+		347394AD2F52817900377DBA /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347394AC2F52817900377DBA /* TransferViewController.swift */; };
 		882319C62F39846B0056E50D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882319C52F39846B0056E50D /* ViewController.swift */; };
 		882319DE2F39A1270056E50D /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882319D92F3985D50056E50D /* BankAccount.swift */; };
 		88B8BDE02F3A4FA700E364DA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B8BDDF2F3A4FA100E364DA /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		347394AA2F527B9400377DBA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		347394AC2F52817900377DBA /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		882319BE2F39846B0056E50D /* BankAccountApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankAccountApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		882319C52F39846B0056E50D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		882319D92F3985D50056E50D /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 			isa = PBXGroup;
 			children = (
 				882319C52F39846B0056E50D /* ViewController.swift */,
+				347394AC2F52817900377DBA /* TransferViewController.swift */,
+				347394AA2F527B9400377DBA /* LoginViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -160,6 +166,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				347394AB2F527B9400377DBA /* LoginViewController.swift in Sources */,
+				347394AD2F52817900377DBA /* TransferViewController.swift in Sources */,
 				882319C62F39846B0056E50D /* ViewController.swift in Sources */,
 				882319DE2F39A1270056E50D /* BankAccount.swift in Sources */,
 				88B8BDE02F3A4FA700E364DA /* User.swift in Sources */,

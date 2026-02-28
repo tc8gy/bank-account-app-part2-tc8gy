@@ -17,11 +17,15 @@ class ViewController: UIViewController {
     @IBOutlet var depositbutton: UIButton!
     @IBOutlet var checkBalanceButton: UIButton!
     @IBOutlet var withdrawButton: UIButton!
+    @IBOutlet weak var transferButton: UIButton!
+    
     
     
     // MARK: - Model
         let account = BankAccount(startingBalance:150.00)
         let user = User(name: "Student")
+    
+        var inputedName: String?
     
     
     // MARK: - Helpers
@@ -107,6 +111,20 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "BankToTransfer" {
+            let destination = segue.destination as! TransferViewController
+            destination.account = account
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateBalanceLabel()
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -114,7 +132,7 @@ class ViewController: UIViewController {
         // Initial UI setup
         updateBalanceLabel()
         statusLabel.text = "Status: Ready"
-        userLabel.text = "Welcome, \(user.name)"
+        userLabel.text = "Welcome, \(inputedName ?? "Student")"
         
         
         
